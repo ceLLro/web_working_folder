@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+}
+
+#headerMenu {
+    display: inline-block;
+    background-color:rgb(208, 233, 255);
+}
