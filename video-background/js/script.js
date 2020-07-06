@@ -1,10 +1,14 @@
-let myVideos = ["https://github.com/ceLLro/web-essentials/blob/master/video-background/files/videos/1.mov", "https://github.com/ceLLro/web-essentials/blob/master/video-background/files/videos/2.mov"]
-let videoPlayer = document.getElementById("main-background-video");
+var video = document.getElementById("background-video");
+var btn = document.getElementById("stopButton");
 
-for (let index = 0; index < myVideos.length; index++) {
-    videoPlayer.src = myVideos[index];
-    
+function pauseMovie() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
 }
-
 
 
